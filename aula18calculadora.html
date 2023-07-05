@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+ 
+    .container {
+max-width: 400px;
+margin:auto;
+padding: 20px;
+    }
+    </style>
+</head>
+<body>
+    <h2>CALCULADORA</h2>
+    <input type="number" id="num1">
+    <select>
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+    </select>
+    <input type="number" id="num2">
+    <button onclick="somar()">soma</button>
+    <button onclick="diminuir()">dim</button>
+    <button onclick="m()">mul</button>
+    <button onclick="d()">div</button>
+
+   <h4>resposta</h4>
+   <input type="number" id="resposta">
+
+<script>
+function somar() {
+    var num1 = Number(document.getElementById("num1").value)
+    var num2 = Number(document.getElementById("num2").value)
+    document.getElementById("resposta").value = num1+num2
+}
+
+function diminuir() {
+    var num1 = Number(document.getElementById("num1").value)
+    var num2 = Number(document.getElementById("num2").value)
+    document.getElementById("resposta").value = num1-num2
+}
+
+function m() {
+    var num1 = Number(document.getElementById("num1").value)
+    var num2 = Number(document.getElementById("num2").value)
+    document.getElementById("resposta").value = num1*num2
+}
+
+function d() {
+    var num1 = Number(document.getElementById("num1").value)
+    var num2 = Number(document.getElementById("num2").value)
+    document.getElementById("resposta").value = num1/num2
+}
+
+</script>
+
+
+
+</body>
+</html>
